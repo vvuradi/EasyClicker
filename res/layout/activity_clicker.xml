@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern"
+    tools:context=".Clicker" >
+
+    <!-- #0099cc -->
+
+    <LinearLayout
+        android:id="@+id/outer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/countView"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/yellow_view_image"
+            android:gravity="center"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/init"
+            android:textColor="#1C1C1C"
+            android:textSize="80sp" />
+
+        <FrameLayout
+            android:id="@+id/inner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp" >
+
+            <ImageButton
+                android:id="@+id/add"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@drawable/selector_plus"
+                android:contentDescription="@string/add"
+                android:gravity="center"
+                android:onClick="incCount"
+                android:scaleType="centerCrop"
+                android:src="@drawable/green_plus" />
+
+            <ImageButton
+                android:id="@+id/sub"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/selector_minus"
+                android:contentDescription="@string/minus"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/red_minus" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/intValue"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/yellow_view_image"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text="@string/init"
+            android:textColor="#1C1C1C"
+            android:textSize="35sp"
+            android:visibility="gone" >
+        </EditText>
+    </LinearLayout>
+
+</ScrollView>
