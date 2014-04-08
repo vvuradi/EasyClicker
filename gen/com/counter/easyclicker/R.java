@@ -36,16 +36,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int yellow_view_image=0x7f02000b;
     }
     public static final class id {
-        public static final int add=0x7f090003;
-        public static final int countView=0x7f090001;
-        public static final int id_copy_count=0x7f090009;
-        public static final int id_prev_value=0x7f090008;
-        public static final int id_reset=0x7f090007;
-        public static final int id_settings=0x7f090006;
-        public static final int inner=0x7f090002;
-        public static final int intValue=0x7f090005;
+        public static final int add=0x7f090004;
+        public static final int countName=0x7f090001;
+        public static final int countView=0x7f090002;
+        public static final int id_copy_count=0x7f09000b;
+        public static final int id_prev_value=0x7f09000a;
+        public static final int id_reset=0x7f090009;
+        public static final int id_settings=0x7f090008;
+        public static final int inner=0x7f090003;
+        public static final int inner_layout=0x7f090007;
+        public static final int intValue=0x7f090006;
         public static final int outer_layout=0x7f090000;
-        public static final int sub=0x7f090004;
+        public static final int sub=0x7f090005;
     }
     public static final class layout {
         public static final int activity_clicker=0x7f030000;
@@ -55,32 +57,33 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class string {
         public static final int action_reset=0x7f060003;
-        public static final int add=0x7f060005;
+        public static final int add=0x7f060006;
         public static final int app_name=0x7f060000;
-        public static final int copy_clipboard=0x7f06000e;
-        public static final int copy_count=0x7f06000a;
+        public static final int copy_clipboard=0x7f06000f;
+        public static final int copy_count=0x7f06000b;
+        public static final int count_name=0x7f060004;
         public static final int dummy_button=0x7f060001;
         public static final int dummy_content=0x7f060002;
-        public static final int init=0x7f060004;
-        public static final int limit_reached=0x7f06000d;
-        public static final int minus=0x7f060006;
-        public static final int ok=0x7f06000c;
-        public static final int pref_description_hardware_button=0x7f060012;
-        public static final int pref_description_manual_input=0x7f060016;
-        public static final int pref_description_stay_awake=0x7f060018;
-        public static final int pref_description_vibration=0x7f060014;
+        public static final int init=0x7f060005;
+        public static final int limit_reached=0x7f06000e;
+        public static final int minus=0x7f060007;
+        public static final int ok=0x7f06000d;
+        public static final int pref_description_hardware_button=0x7f060013;
+        public static final int pref_description_manual_input=0x7f060017;
+        public static final int pref_description_stay_awake=0x7f060019;
+        public static final int pref_description_vibration=0x7f060015;
         /**  Example General settings 
          */
-        public static final int pref_header_general=0x7f060010;
-        public static final int pref_title_hardware_button=0x7f060011;
-        public static final int pref_title_manual_input=0x7f060015;
-        public static final int pref_title_stay_awake=0x7f060017;
-        public static final int pref_title_vibration=0x7f060013;
-        public static final int prev_value=0x7f060009;
-        public static final int prev_value_dialog_title=0x7f06000b;
-        public static final int reset=0x7f060008;
-        public static final int setting=0x7f060007;
-        public static final int title_activity_settings=0x7f06000f;
+        public static final int pref_header_general=0x7f060011;
+        public static final int pref_title_hardware_button=0x7f060012;
+        public static final int pref_title_manual_input=0x7f060016;
+        public static final int pref_title_stay_awake=0x7f060018;
+        public static final int pref_title_vibration=0x7f060014;
+        public static final int prev_value=0x7f06000a;
+        public static final int prev_value_dialog_title=0x7f06000c;
+        public static final int reset=0x7f060009;
+        public static final int setting=0x7f060008;
+        public static final int title_activity_settings=0x7f060010;
     }
     public static final class style {
         /** 
