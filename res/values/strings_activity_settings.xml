@@ -1,9 +1,9 @@
 <resources>
 
-    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings">Preferences</string>
 
     <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
+    
     <string name="pref_title_hardware_button">Enable hardware button</string>
     <string name="pref_description_hardware_button">Use volume up and down buttons for count.</string>
     <string name="pref_title_vibration">Vibration</string>
@@ -12,5 +12,11 @@
     <string name="pref_description_manual_input">Enter a value to increment or decrement.</string>
     <string name="pref_title_stay_awake">Stay Awake</string>
     <string name="pref_description_stay_awake">Keeps the screen on while visible.</string>
+    
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_counter">Counter Controls</string>
+    <string name="pref_header_rate">Feedback</string>
+    <string name="pref_rate">Rate the App</string>
+    
 
 </resources>

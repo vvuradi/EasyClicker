@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -24,9 +25,11 @@ import android.widget.Toast;
 public class Clicker extends Activity {
 
 	private int count;
+	private String countName;
 	private TextView countTextView;
+	private TextView countNameView;
 	private EditText intValueView;
-	private final int VIBRATION_TIME = 10;
+	private final int VIBRATION_TIME = 15;
 	private final int MAX_COUNT = 99999;
 	Vibrator vibe;
 	SharedPreferences SP;
@@ -164,11 +167,35 @@ public class Clicker extends Activity {
 		}
 	}	
 	
+	public void setCounterName(View v){			
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle(R.string.counter_name_edit);
+		
+		final EditText input = new EditText(this);
+		input.setText(countNameView.getText());
+		builder.setView(input);
+		
+		builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				countName = input.getText().toString();
+				countNameView.setText(countName);
+			}
+		} );
+		
+		builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {}
+		});		
+		builder.show();		
+	}
+	
 	@Override
 	public void onPause() {
 	    super.onPause();  // Always call the superclass method first
 	    editor = SP.edit();
 	    editor.putInt("count", count);
+	    editor.putString("countName", countName);
 	    editor.commit();
 	}
 	
@@ -179,21 +206,17 @@ public class Clicker extends Activity {
 		PreferenceManager.setDefaultValues(getApplicationContext(), R.xml.pref_general, false);
 		SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 		count = SP.getInt("count", 0);		
+		countName = SP.getString("countName", "My Counter");
 		
 		vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 		countTextView = (TextView)findViewById(R.id.countView);
+		countNameView = (TextView)findViewById(R.id.countName);
 		intValueView = (EditText) findViewById(R.id.intValue);	
 		
 		countTextView.setKeepScreenOn(SP.getBoolean("stay_awake_checkbox", true));
 		
 		checkManualInput();		
+		countNameView.setText(countName);
 		display();					
 	}
 }
-
-
-
-
-
-
-

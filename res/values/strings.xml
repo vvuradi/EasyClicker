@@ -9,12 +9,14 @@
     <string name="init">0</string>
     <string name="add">+</string>
     <string name="minus">-</string>
-    <string name="setting">Settings</string>
+    <string name="setting">Preferences</string>
     <string name="reset">Reset Count</string>
     <string name="prev_value">Show Previous Count</string>
     <string name="copy_count">Copy Count Value</string>
     <string name="prev_value_dialog_title">Previous Count</string>
+    <string name="counter_name_edit">Set Counter Name</string>
     <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
     <string name="limit_reached">Count limit reached. \nPlease reset counter.</string>
     <string name="copy_clipboard">Copied to Clipboard</string>
 

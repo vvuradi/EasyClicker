@@ -1,24 +1,34 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="hardware_checkbox"
-        android:summary="@string/pref_description_hardware_button"
-        android:title="@string/pref_title_hardware_button" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="vibration_checkbox"
-        android:summary="@string/pref_description_vibration"
-        android:title="@string/pref_title_vibration" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="manual_input_checkbox"
-        android:summary="@string/pref_description_manual_input"
-        android:title="@string/pref_title_manual_input" />
-    <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="stay_awake_checkbox"
-        android:summary="@string/pref_description_stay_awake"
-        android:title="@string/pref_title_stay_awake" />
+    <PreferenceCategory android:title="@string/pref_header_counter" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="hardware_checkbox"
+            android:summary="@string/pref_description_hardware_button"
+            android:title="@string/pref_title_hardware_button" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="vibration_checkbox"
+            android:summary="@string/pref_description_vibration"
+            android:title="@string/pref_title_vibration" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="manual_input_checkbox"
+            android:summary="@string/pref_description_manual_input"
+            android:title="@string/pref_title_manual_input" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="stay_awake_checkbox"
+            android:summary="@string/pref_description_stay_awake"
+            android:title="@string/pref_title_stay_awake" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_header_rate" >
+        <Preference android:title="@string/pref_rate" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="market://details?id=com.counter.easyclicker" />
+            <!-- android:data="http://play.google.com/store/apps/details?id=com.counter.easyclicker" -->
+        </Preference>
+    </PreferenceCategory>
 
 </PreferenceScreen>

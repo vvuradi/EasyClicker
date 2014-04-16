@@ -12,20 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"        
+        android:gravity="center"
         android:orientation="vertical" >
-        
+
         <TextView
             android:id="@+id/countName"
+            android:clickable="true"
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_gravity="top|center"            
+            android:layout_gravity="center"
             android:background="@drawable/yellow_view_image"
             android:gravity="center"
             android:maxLines="1"
             android:singleLine="true"
             android:text="@string/count_name"
             android:textColor="#1C1C1C"
+            android:onClick="setCounterName"
             android:textSize="35sp" />
 
         <LinearLayout
@@ -33,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center"            
+            android:gravity="center"
             android:orientation="horizontal" >
 
             <ImageButton
@@ -49,21 +51,26 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/green_plus" />
 
-            <TextView
-                android:id="@+id/countView"
-                android:layout_width="250dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/yellow_view_image"
-                android:gravity="center"
-                android:maxLength="6"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="@string/init"
-                android:textColor="#1C1C1C"
-                android:textSize="80sp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/countView"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/yellow_view_image"
+                    android:gravity="center"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/init"
+                    android:textColor="#1C1C1C"
+                    android:textSize="80sp" />
+            </FrameLayout>
 
             <ImageButton
                 android:id="@+id/sub"
@@ -82,8 +89,8 @@
             android:id="@+id/intValue"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
             android:layout_gravity="bottom|center"
+            android:layout_marginTop="20dp"
             android:background="@drawable/yellow_view_image"
             android:gravity="center"
             android:inputType="number"
@@ -94,7 +101,7 @@
             android:text="@string/init"
             android:textColor="#1C1C1C"
             android:textSize="35sp"
-            android:visibility="gone">
+            android:visibility="gone" >
         </EditText>
     </LinearLayout>
 
