@@ -17,45 +17,32 @@
 
         <TextView
             android:id="@+id/countName"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="top|center"
-            android:background="@drawable/yellow_view_image"
             android:clickable="true"
+            android:layout_width="470dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yellow_view_image"
             android:gravity="center"
             android:maxLines="1"
-            android:onClick="setCounterName"
             android:singleLine="true"
             android:text="@string/count_name"
             android:textColor="#1C1C1C"
-            android:textSize="35sp" />
+            android:onClick="setCounterName"
+            android:textSize="70sp" />
 
-        <TextView
-            android:id="@+id/countView"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:layout_gravity="top|center"
-            android:background="@drawable/yellow_view_image"
-            android:gravity="center"
-            android:maxLength="6"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:text="@string/init"
-            android:textColor="#1C1C1C"
-            android:textSize="80sp" />
-
-        <FrameLayout
-            android:id="@+id/inner"
-            android:layout_width="250dp"
+        <LinearLayout
+            android:id="@+id/inner_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp" >
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
 
             <ImageButton
                 android:id="@+id/add"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"                
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_vertical|left"
                 android:background="@drawable/selector_plus"
                 android:contentDescription="@string/add"
@@ -64,25 +51,46 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/green_plus" />
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" >
+
+                <TextView
+                    android:id="@+id/countView"
+                    android:layout_width="470dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/yellow_view_image"
+                    android:gravity="center"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/init"
+                    android:textColor="#1C1C1C"
+                    android:textSize="160sp" />
+            </FrameLayout>
+
             <ImageButton
                 android:id="@+id/sub"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center_vertical|right"
                 android:background="@drawable/selector_minus"
                 android:contentDescription="@string/minus"
                 android:gravity="center"
                 android:scaleType="centerCrop"
                 android:src="@drawable/red_minus" />
-        </FrameLayout>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/intValue"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/yellow_view_image"
             android:gravity="center"
             android:inputType="number"
@@ -92,7 +100,7 @@
             android:singleLine="true"
             android:text="@string/init"
             android:textColor="#1C1C1C"
-            android:textSize="25sp"
+            android:textSize="50sp"
             android:visibility="gone" >
         </EditText>
     </LinearLayout>

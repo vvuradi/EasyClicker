@@ -70,20 +70,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int limit_reached=0x7f060010;
         public static final int minus=0x7f060007;
         public static final int ok=0x7f06000e;
-        public static final int pref_description_hardware_button=0x7f060015;
-        public static final int pref_description_manual_input=0x7f060019;
-        public static final int pref_description_stay_awake=0x7f06001b;
-        public static final int pref_description_vibration=0x7f060017;
+        public static final int pref_description_hardware_button=0x7f060014;
+        public static final int pref_description_manual_input=0x7f060018;
+        public static final int pref_description_stay_awake=0x7f06001a;
+        public static final int pref_description_vibration=0x7f060016;
         public static final int pref_header_counter=0x7f06001c;
-        /**  Example General settings 
-         */
-        public static final int pref_header_general=0x7f060013;
+        public static final int pref_header_general=0x7f06001b;
         public static final int pref_header_rate=0x7f06001d;
         public static final int pref_rate=0x7f06001e;
-        public static final int pref_title_hardware_button=0x7f060014;
-        public static final int pref_title_manual_input=0x7f060018;
-        public static final int pref_title_stay_awake=0x7f06001a;
-        public static final int pref_title_vibration=0x7f060016;
+        /**  Example General settings 
+         */
+        public static final int pref_title_hardware_button=0x7f060013;
+        public static final int pref_title_manual_input=0x7f060017;
+        public static final int pref_title_stay_awake=0x7f060019;
+        public static final int pref_title_vibration=0x7f060015;
         public static final int prev_value=0x7f06000a;
         public static final int prev_value_dialog_title=0x7f06000c;
         public static final int reset=0x7f060009;
