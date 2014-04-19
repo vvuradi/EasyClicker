@@ -20,6 +20,7 @@
             android:clickable="true"
             android:layout_width="470dp"
             android:layout_height="100dp"
+            android:padding="5dp"
             android:layout_gravity="center"
             android:background="@drawable/yellow_view_image"
             android:gravity="center"

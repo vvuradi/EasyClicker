@@ -7,7 +7,7 @@
             android:summary="@string/pref_description_hardware_button"
             android:title="@string/pref_title_hardware_button" />
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="vibration_checkbox"
             android:summary="@string/pref_description_vibration"
             android:title="@string/pref_title_vibration" />

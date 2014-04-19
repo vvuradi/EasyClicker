@@ -47,7 +47,7 @@ public class Clicker extends Activity {
 					vibe.vibrate(VIBRATION_TIME);
 				changeValue(getValue(), false);				
 			}
-		});
+		});		
 	}
 	
 	private int getValue(){
@@ -217,6 +217,13 @@ public class Clicker extends Activity {
 		
 		checkManualInput();		
 		countNameView.setText(countName);
-		display();					
+		display();
+		
+		if(SP.getBoolean("first_run", true)){
+			Toast.makeText(getBaseContext(), R.string.volume_btn_info, Toast.LENGTH_LONG).show();
+			editor = SP.edit();
+		    editor.putBoolean("first_run", false);
+		    editor.commit();
+		}
 	}
 }
