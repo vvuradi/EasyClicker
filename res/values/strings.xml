@@ -5,7 +5,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="action_reset">Reset</string>
-    <string name="count_name">My Counter vi</string>
+    <string name="count_name">My Counter</string>
     <string name="init">0</string>
     <string name="add">+</string>
     <string name="minus">-</string>
